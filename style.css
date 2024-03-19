@@ -1,0 +1,92 @@
+@font-face {
+  font-family: youngRegular;
+  src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+  font-family: outfitRegular;
+  src: url(/assets/fonts/outfit/static/Outfit-Regular.ttf);
+}
+@font-face {
+  font-family: outfitSemiBold;
+  src: url(/assets/fonts/outfit/static/Outfit-SemiBold.ttf);
+}
+@font-face {
+  font-family: outfitBold;
+  src: url(/assets/fonts/outfit/static/Outfit-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* --spacing:5.75rem; */
+  background-color: #f3e5d7;
+  /* min-block-size: 100dvh; */
+  /* padding:300px min(var(--spacing), 5vmin); */
+  /* display: grid;
+  grid-template: 1fr 1fr 1fr; */
+  /* place-items: center; */
+}
+
+main {
+  background-color: #fff;
+  color: #5f564d;
+  display: grid;
+  place-items: center;
+}
+
+.imageArea > img {
+  max-width: 100px;
+}
+
+.titleArea,
+.prepArea,
+.ingredientsArea,
+.instructionsArea,
+.nutrientsArea {
+  font-family: outfitRegular;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+
+}
+
+.titleArea > h1 {
+  font-family: youngRegular;
+  font-size: 40px;
+  font-weight: 400;
+  color: #000;
+}
+
+.prepArea {
+  background-color: #fff7fb;
+}
+
+.prepTimeTitle {
+  color: #7a284e;
+  font-family: outfitSemiBold;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.prepArea,
+.instructionsArea strong:first-of-type {
+  font-family: outfitBold;
+  font-weight: 700;
+}
+
+.ingredientsTitle,
+.instructionsTitle,
+.nutrientsTitle {
+  color: #854632;
+  font-family: youngRegular;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.nutrientsArea > table tr td:last-child{
+  color: #854632;
+  font-family: outfitBold;
+}

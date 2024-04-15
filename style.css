@@ -20,25 +20,29 @@
   padding: 0;
 }
 
-body {
-  /* --spacing:5.75rem; */
+.container {
   background-color: #f3e5d7;
-  /* min-block-size: 100dvh; */
-  /* padding:300px min(var(--spacing), 5vmin); */
-  /* display: grid;
-  grid-template: 1fr 1fr 1fr; */
-  /* place-items: center; */
+  width:100vw;
+  height: max-content;
+  display: grid;
+  place-content: center;
+  padding: 124px 0;
 }
 
 main {
   background-color: #fff;
   color: #5f564d;
+  max-width : 400px;
+  max-height: max-content;
+  padding:40px;
+  border-radius:24px;
   display: grid;
-  place-items: center;
+  gap: 32px;
 }
 
 .imageArea > img {
-  max-width: 100px;
+  object-fit: cover;
+  max-width: 100%;
 }
 
 .titleArea,
@@ -50,7 +54,14 @@ main {
   font-size: 16px;
   line-height: 150%;
   font-weight: 400;
+  display : grid;
+  gap: 24px;
 
+}
+
+.titleArea{
+  display: grid;
+  paddin-bottom: 28px;
 }
 
 .titleArea > h1 {
@@ -89,4 +100,9 @@ main {
 .nutrientsArea > table tr td:last-child{
   color: #854632;
   font-family: outfitBold;
+}
+
+
+.instructionsArea{
+  padding: 32px 0;
 }
